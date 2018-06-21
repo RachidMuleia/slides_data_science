@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Introdução à Data Science</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Introdução à Data Science">
+  <meta name="author" content="Rachid Muleia">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/logo_muthiana.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Introdução à Data Science</h1>
+    <h2>Introdução ao Python &amp; Programação R</h2>
+    <p>Rachid Muleia<br/>Data Analyst, Msc. in Statistics</p>
+  </hgroup>
+    <a href="https://github.com/RachidMuleia//zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {
+  background-color: #FFFFFF;
+}
+
+
+.title-slide hgroup > h1,
+.title-slide hgroup > h2 {
+  color: #A52A2A
+}
+
+</style>
+
+<h2>Introdução</h2>
+
+<p><br/></p>
+
+<p><em>A cada 10 minutos, o volume de dados gerados no mundo todo é maior do que o volume de dados gerados desde a pré-história até o ano de 2003</em> <a href="https://pt.wikipedia.org/wiki/Ci%C3%AAncia_de_dados">Wikipedia</a></p>
+
+<p><br/></p>
+
+<h3>O que é Data Science (Ciência de Dados)</h3>
+
+<p><br/></p>
+
+<ul>
+<li>Uma área interdisciplinar voltada para o estudo e a análise de dados;</li>
+<li>Visa  extrair conhecimento/informação para tomada de decisão;</li>
+<li>Unificação entre <a href="https://pt.wikipedia.org/wiki/Big_data">big data</a>, <a href="https://pt.wikipedia.org/wiki/Aprendizado_de_m%C3%A1quina">machine learning</a> e outras áreas como estatística, ciência de computação,
+economia, engenharia, etc.</li>
+</ul>
+
+<p>Existe um debate aceso, no que se refere ao facto de <a href="">Data Science</a> confundir-se com a <a href="">Estatística</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <p><center></p>
+
+<p><img src="C:/Users/Rachid/Box%20Sync/My%20Box%20Docs/Bio-Info/Data%20Science/mydeck/assets/img/Data_science_fig.jpg" alt=""></p>
+
+<p><center/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <p>Data Science é a nova <em>&quot;moda&quot;</em> </p>
+
+<p>Segundo a <a href="https://www.glassdoor.com/List/Best-Jobs-in-America-LST_KQ0,20.htm">glassdor</a>, os cientistas de dados sãos os profissionais mais bem pagos nos EUA.</p>
+
+<p><center></p>
+
+<p><img src="C:/Users/Rachid/Box%20Sync/My%20Box%20Docs/Bio-Info/Data%20Science/mydeck/assets/img/best_paid.png" alt=""></p>
+
+<p><center/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h3>Principais Linguagens de programação</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><br/></p>
+
+<ul>
+<li><a href="https://pt.wikipedia.org/wiki/R_linguagem_de_programa%C3%A7%C3%A3o">R (linguagem de programação)</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/SAS_inform%C3%A1tica">SAS (Statistical Analysis System)</a></li>
+<li><a href="https://pt.wikipedia.org/wiki/Python">Python</a></li>
+</ul>
+
+<p><br/></p>
+
+<h3>Qual delas é a melhor?</h3>
+
+<p>Segundo a <a href="https://analyticsindiamag.com/top-10-programming-languages-data-scientists-learn-2018/"> Analytics India Magazine</a>, Python ocupa a primeira posição como sendo a linguagem mais popular, tanto em termos de remuneração, assim como de popularidade entre os recrutadores.</p>
+
+<ul>
+<li>Em Moçambique o cenário é meio diferente!!!</li>
+</ul>
+
+<p>E o R? Pessoalmente acho que para Data Science seja a melhor.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>O que é preciso para ser um cientista de dados</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><center></p>
+
+<p><img src="C:/Users/Rachid/Box%20Sync/My%20Box%20Docs/Bio-Info/Data%20Science/mydeck/assets/img/data_science_matriz.jpg" alt=""></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Instalação do Python e R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br/></p>
+
+<ul>
+<li><p>O Python tem duas version Python2 e Python3.</p></li>
+<li><p>Vamos trabalhar com a versão Python3.</p></li>
+<li><p>Download <a href="https://www.anaconda.com/download/">Anaconda Python Distribution</a>.</p></li>
+<li><p><a href="https://www.anaconda.com/download/">Anaconda Python Distribution</a> já vem com um editor Spyder.</p></li>
+<li><p>A instalação do R é mais simples, pode ser baixado a partir do repositório <a href="https://cran.r-project.org/bin/windows/base/">CRAN</a> ou <a href="https://www.r-project.org/">The R Project for Statistical Computing</a></p></li>
+<li><p>Recomendo que também instale o <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a>, um editor que ajuda na aprendizagem e garante maior produtividade.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Operações aritiméticas e declaração de variáveis</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Python- operações aritiméticas</h3>
+
+<p><br/>
+<img src="C:/Users/Rachid/Box%20Sync/My%20Box%20Docs/Bio-Info/Data%20Science/mydeck/assets/img/operadores_artimeticos.png" alt=""></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h3>Python-declaração de variáveis</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><br/></p>
+
+<ul>
+<li><p>Em Python a declaração de variáveis ocorre automaticamente quando atribuímos um valor a uma variável</p></li>
+<li><p>o sinal (=) é usado para atribuição</p></li>
+</ul>
+
+<pre><code class="python">idade=20
+altura=1.70
+peso=80.5
+nome=&#39;Rachid&#39;
+print(&quot;idade:&quot;,idade, &quot;altura:&quot;, altura, &#39;peso:&#39;,peso, &quot;nome:&quot;, nome)
+</code></pre>
+
+<pre><code>## idade: 20 altura: 1.7 peso: 80.5 nome: Rachid
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h1>Manipulação de strings</h1>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>O Python apresenta uma forma muito intuitiva de trabalhar com strings.</p></li>
+<li><p>Pode-se facilmente aceder a posição de um carácter.</p></li>
+</ul>
+
+<p><br/>
+<img src="C:/Users/Rachid/Box%20Sync/My%20Box%20Docs/Bio-Info/Data%20Science/mydeck/assets/img/string_index.png" alt=""></p>
+
+<pre><code class="python">ss = &quot;Sammy Shark!&quot;
+print(ss[2])
+</code></pre>
+
+<pre><code>## m
+</code></pre>
+
+<pre><code class="python">print(ss[4])
+</code></pre>
+
+<pre><code>## y
+</code></pre>
+
+<pre><code class="python">print(ss[-1])
+</code></pre>
+
+<pre><code>## !
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="id" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Listas</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br/></p>
+
+<ul>
+<li><p>Uma sequência de objectos separados por vírgulas;</p></li>
+<li><p>Uma estrutura de dados mutável;</p></li>
+<li><p>Os elementos da lista podem não ser do mesmo tipo;</p></li>
+</ul>
+
+<p>As listas criam-se usando colchetes [] e separando os item(elementos) por vírgulas.</p>
+
+<pre><code class="python">lista_vazia=[]
+lista_nomes=[&#39;rachid&#39;,&#39;joel&#39;,&#39;guidion&#39;,&#39;muleia&#39;]
+lista_dados=[&#39;rachid&#39;,20, 80,1.7,&#39;Data Analyst&#39;]
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Acesso aos itens da lista</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br/></p>
+
+<p>A forma de aceder os elementos da lista não se difere a das strings.</p>
+
+<pre><code class="python">lista_nomes=[&#39;rachid&#39;,&#39;joel&#39;,&#39;guidion&#39;,&#39;muleia&#39;]
+print(lista_nomes[0]) # elemento na posição 1.
+</code></pre>
+
+<pre><code>## rachid
+</code></pre>
+
+<pre><code class="python">print(lista_nomes[0:3]) # elementos na posição 1 até 2
+</code></pre>
+
+<pre><code>## [&#39;rachid&#39;, &#39;joel&#39;, &#39;guidion&#39;]
+</code></pre>
+
+<pre><code class="python">print(lista_nomes[-1])# elemento na última posição
+</code></pre>
+
+<pre><code>## muleia
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Adicionar elementos numa lista</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><br/> 
+Para adicionar um item de cada vez na lista usa-se o método <code>append()</code></p>
+
+<pre><code class="python">lista_nomes=[&#39;rachid&#39;,&#39;joel&#39;,&#39;guidion&#39;,&#39;muleia&#39;]
+lista_nomes.append(&#39;rute&#39;)
+print(lista_nomes)
+</code></pre>
+
+<pre><code>## [&#39;rachid&#39;, &#39;joel&#39;, &#39;guidion&#39;, &#39;muleia&#39;, &#39;rute&#39;]
+</code></pre>
+
+<p>Caso deseja adicionar mais de um item de uma só vez usa-se o método <code>extend()</code></p>
+
+<pre><code class="python">lista_nomes=[&#39;rachid&#39;,&#39;joel&#39;,&#39;guidion&#39;,&#39;muleia&#39;]
+lista_nomes.extend([&#39;rute&#39;,&#39;timana&#39;])
+print(lista_nomes)
+</code></pre>
+
+<pre><code>## [&#39;rachid&#39;, &#39;joel&#39;, &#39;guidion&#39;, &#39;muleia&#39;, &#39;rute&#39;, &#39;timana&#39;]
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Mais operações com listas</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="python">lista_nomes=[&#39;rachid&#39;,&#39;joel&#39;,&#39;guidion&#39;,&#39;muleia&#39;]
+del lista_nomes[2] # indicar a posicao do elemente que pretende apagar
+print(lista_nomes)
+</code></pre>
+
+<pre><code>## [&#39;rachid&#39;, &#39;joel&#39;, &#39;muleia&#39;]
+</code></pre>
+
+<pre><code class="python">lista_nomes.remove(&#39;rachid&#39;) # indicar o elemento pelo nome que pretende pagar
+print(lista_nomes)
+</code></pre>
+
+<pre><code>## [&#39;joel&#39;, &#39;muleia&#39;]
+</code></pre>
+
+<pre><code class="python">num=[1,1,1,1,1,2,2,2,2,2,2]
+print(num.count(1)) # numero de vezes que um elemento ocorre na lista
+</code></pre>
+
+<pre><code>## 5
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <article data-timings="">
+    <p>Mais detalhes sobre operações em listas podem ser encontradas em:</p>
+
+<p><br/></p>
+
+<p><br/></p>
+
+<ul>
+<li><p><a href="https://www.tutorialspoint.com/python/python_lists.htm">Tutorials Points</a>.</p></li>
+<li><p><a href="https://www.digitalocean.com/community/tutorials/understanding-lists-in-python-3">Digital Ocean</a>.</p></li>
+<li><p><a href="http://www.devfuria.com.br/python/listas/">O báscio de listas</a>. Esta fonte tem uma boa explicação sobre listas, e mostra como usar diversos métodos e funções para listas.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Tuplas</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Sequência de objectos imútaveis.</p></li>
+<li><p>As tuplas são semelhantes a listas, todavia não podem ser alteradas.</p></li>
+<li><p>Diferentemente das listas, as tuplas usam parenteses curvos ()</p></li>
+</ul>
+
+<pre><code class="python">nomes=(&#39;Rachid&#39;,&#39;Joel&#39;,&#39;Guidion&#39;,&#39;Muleia&#39;)
+print(nomes)
+</code></pre>
+
+<pre><code>## (&#39;Rachid&#39;, &#39;Joel&#39;, &#39;Guidion&#39;, &#39;Muleia&#39;)
+</code></pre>
+
+<pre><code class="python">caract=(&#39;Rachid&#39;, 20, 80,1.7)
+print(caract)
+</code></pre>
+
+<pre><code>## (&#39;Rachid&#39;, 20, 80, 1.7)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h3>Por que usar  R?</h3>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Actualmente é uma das liguangens de programação com maior popularidade.</p></li>
+<li><p>R é bastante recomendável para Data Science.</p></li>
+<li><p>Tem uma imensidão de recursos para aprendizagem.</p></li>
+<li><p>Muita gente empenhada no desenvolvimento do R</p></li>
+<li><p>A comunidade de usuários de R é bastante grande. <em>Check</em> <a href="stackoverflow.com/questions/tagged/r">Stackoverflow R</a></p></li>
+<li><p>&quot;Melhor software para visualização de dados.&quot;</p></li>
+<li><p><a href="https://shiny.rstudio.com/gallery/">Desenvolvimento de aplicações webs, vulgarmente conhecidas por Shiny App</a></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h3>Instalação e Inicialização</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>O processo de instalação é similar ao de qualquer programa.</p>
+
+<ul>
+<li><p>O ficheiro é executavel, então  é só clicar duas vezes e seguir as instruções </p></li>
+<li><p>Após a instalação o programa pode ser incializado indo ao Sart Menu e procurar pelo icon:</p></li>
+</ul>
+
+<p><img src="C:/Users/Rachid/Box Sync/My Box Docs/Bio-Info/Data Science/mydeck/assets/img/Rstudio.png" height="300px" width="300px"/>      <img src="C:/Users/Rachid/Box Sync/My Box Docs/Bio-Info/Data Science/mydeck/assets/img/Rlogo.svg" height="300px" width="300px"/></p>
+
+<p>Para maior desempenho na aprendizagem recomendo que use o Rstudio (preferência pessoal). Existem outros editores...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Operadores aritiméticos em R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>O R também pode ser usado como calculadora.</p>
+
+<pre><code class="r">x + y #adição
+x - y #subtração
+x * y #multiplicação
+x / y #divisão
+x ^ y #exponenciação
+x %% y #modulus(resto da divisão)
+x %/% y #divisão inteira
+</code></pre>
+
+<hr>
+
+<p>Para além de operações artiméticas, o R pode fazer operações matemáticas complexas. <a href="https://stat.ethz.ch/R-manual/R-devel/library/base/html/Trig.html">Vide documentação</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Tipo de Dados e Estrutura de Dados</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Tipo de dados</h3>
+
+<ul>
+<li><p>Logical (TRUE &amp; FALSE)</p></li>
+<li><p>Interger (número inteiro) ex: 1L,2L,3L...</p></li>
+<li><p>Numeric (número real) ex: 2.0, 4.7,...</p></li>
+<li><p>character (carácter/string) ex: &quot; Global&quot;.</p></li>
+</ul>
+
+<h3>Estrutura de dados</h3>
+
+<ul>
+<li><p>Vectors (vectores)</p></li>
+<li><p>Lists  (listas)</p></li>
+<li><p>Matrix (matrizes)</p></li>
+<li><p>Array</p></li>
+<li><p>Dataframe</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h3>vector</h3>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">apple &lt;- c(&#39;red&#39;,&#39;green&#39;,&quot;yellow&quot;)
+print(apple)
+</code></pre>
+
+<pre><code>## [1] &quot;red&quot;    &quot;green&quot;  &quot;yellow&quot;
+</code></pre>
+
+<pre><code class="r">#elementos do vector podem ser acedidos usando []
+apple[1]
+</code></pre>
+
+<pre><code>## [1] &quot;red&quot;
+</code></pre>
+
+<pre><code class="r">apple[2]
+</code></pre>
+
+<pre><code>## [1] &quot;green&quot;
+</code></pre>
+
+<pre><code class="r">apple[c(1,3)]
+</code></pre>
+
+<pre><code>## [1] &quot;red&quot;    &quot;yellow&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h3>listas</h3>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r"># Criacao de lista.
+list1&lt;-list(c(2,5,3),21.3,sin)
+# imprimir a lista.
+print(list1)
+</code></pre>
+
+<pre><code>## [[1]]
+## [1] 2 5 3
+## 
+## [[2]]
+## [1] 21.3
+## 
+## [[3]]
+## function (x)  .Primitive(&quot;sin&quot;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h3>Matrizes</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>Uma matriz é um conjunto de dados retangular bidimensional. A função <code>matrix()</code> recebe um vector. </p>
+
+<pre><code class="r"># Criacao da matriz.
+M = matrix( c(&#39;a&#39;,&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;b&#39;,&#39;a&#39;), nrow = 2, ncol = 3, byrow = TRUE)
+print(M)
+</code></pre>
+
+<pre><code>##      [,1] [,2] [,3]
+## [1,] &quot;a&quot;  &quot;a&quot;  &quot;b&quot; 
+## [2,] &quot;c&quot;  &quot;b&quot;  &quot;a&quot;
+</code></pre>
+
+<pre><code class="r"># Os valores da matriz podem ser acedidos usando [,]
+M[1,3]; M[1,1:3]
+</code></pre>
+
+<pre><code>## [1] &quot;b&quot;
+</code></pre>
+
+<pre><code>## [1] &quot;a&quot; &quot;a&quot; &quot;b&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h3>Matrizes (um pouco mais)</h3>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">Y=matrix(1:12, nrow = 3, ncol = 4)
+Y
+</code></pre>
+
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    4    7   10
+## [2,]    2    5    8   11
+## [3,]    3    6    9   12
+</code></pre>
+
+<pre><code class="r">Y[1, 3]; Y[1, ]; Y[, 2]
+</code></pre>
+
+<pre><code>## [1] 7
+</code></pre>
+
+<pre><code>## [1]  1  4  7 10
+</code></pre>
+
+<pre><code>## [1] 4 5 6
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Data frame</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Um objecto data.frame em R tem propriedades dimensionais semelhantes a uma matriz, mas pode conter dados categóricos, além de numéricos.
+Uma matriz só pode levar dados do mesmo tipo.</p>
+
+<p>Uma data frame pode ser criada usando a função <code>data.frame()</code>. </p>
+
+<pre><code class="r">nomes=c(&quot;Edson&quot;, &quot;Eudson&quot;,&quot;Euclides&quot;, &quot;Freid&quot;)
+idade=c(30,35,32,34)
+residencia=c(&#39;Zimpeto&#39;,&#39;Liberdade&#39;,&#39;Alto-Mae&#39;, &quot;Polana&quot;)
+#data frame
+dados_trab=data.frame(nomes, idade, residencia, stringsAsFactors=FALSE)
+#inspeccionar
+head(dados_trab)
+</code></pre>
+
+<pre><code>##      nomes idade residencia
+## 1    Edson    30    Zimpeto
+## 2   Eudson    35  Liberdade
+## 3 Euclides    32   Alto-Mae
+## 4    Freid    34     Polana
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <article data-timings="">
+    <pre><code class="r">dim(dados_trab) #dimensão da base de dados.
+</code></pre>
+
+<pre><code>## [1] 4 3
+</code></pre>
+
+<pre><code class="r">names(dados_trab) # nome das variáveis.
+</code></pre>
+
+<pre><code>## [1] &quot;nomes&quot;      &quot;idade&quot;      &quot;residencia&quot;
+</code></pre>
+
+<pre><code class="r">str(dados_trab) # estrutura da base de dados.
+</code></pre>
+
+<pre><code>## &#39;data.frame&#39;:    4 obs. of  3 variables:
+##  $ nomes     : chr  &quot;Edson&quot; &quot;Eudson&quot; &quot;Euclides&quot; &quot;Freid&quot;
+##  $ idade     : num  30 35 32 34
+##  $ residencia: chr  &quot;Zimpeto&quot; &quot;Liberdade&quot; &quot;Alto-Mae&quot; &quot;Polana&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h3>Como aceder aos elementos da Data Frame?</h3>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Os elementos de uma data frame podem ser acedidos da mesma forma como elementos de uma lista ou matriz.</li>
+</ul>
+
+<h3>Acedendo como uma lista</h3>
+
+<ul>
+<li>Pode-se usar os seguintes operados, [ , [[ or $ para aceder as colunas.</li>
+</ul>
+
+<pre><code class="r">dados_trab[&#39;nomes&#39;]
+</code></pre>
+
+<pre><code>##      nomes
+## 1    Edson
+## 2   Eudson
+## 3 Euclides
+## 4    Freid
+</code></pre>
+
+<pre><code class="r">dados_trab$nomes
+</code></pre>
+
+<pre><code>## [1] &quot;Edson&quot;    &quot;Eudson&quot;   &quot;Euclides&quot; &quot;Freid&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <article data-timings="">
+    <pre><code class="r">dados_trab[[&#39;nomes&#39;]]
+</code></pre>
+
+<pre><code>## [1] &quot;Edson&quot;    &quot;Eudson&quot;   &quot;Euclides&quot; &quot;Freid&quot;
+</code></pre>
+
+<h3>Aceder como uma matriz.</h3>
+
+<pre><code class="r">dados_trab[1:3,] #seleccione as três primeiras linhas.
+</code></pre>
+
+<pre><code>##      nomes idade residencia
+## 1    Edson    30    Zimpeto
+## 2   Eudson    35  Liberdade
+## 3 Euclides    32   Alto-Mae
+</code></pre>
+
+<pre><code class="r">dados_trab[dados_trab$idade&lt;34,] #seleccione os que tem idade inferior a 35.
+</code></pre>
+
+<pre><code>##      nomes idade residencia
+## 1    Edson    30    Zimpeto
+## 3 Euclides    32   Alto-Mae
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <article data-timings="">
+    <pre><code class="r">dados_trab[,2:3] #seleccione a segunda e a terceira coluna.
+</code></pre>
+
+<pre><code>##   idade residencia
+## 1    30    Zimpeto
+## 2    35  Liberdade
+## 3    32   Alto-Mae
+## 4    34     Polana
+</code></pre>
+
+<h3>Modificar elementos da Data Frame (observações).</h3>
+
+<pre><code class="r">dados_trab[1, &#39;idade&#39;]=35
+dados_trab
+</code></pre>
+
+<pre><code>##      nomes idade residencia
+## 1    Edson    35    Zimpeto
+## 2   Eudson    35  Liberdade
+## 3 Euclides    32   Alto-Mae
+## 4    Freid    34     Polana
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <article data-timings="">
+    <p>R tem um editor de dados no estilo de planilha, que por sua vez,  pode ser usado para inserir os dados.</p>
+
+<pre><code class="r">newdata=edit(data.frame())
+dados_trab=edit(dados_trab)
+</code></pre>
+
+<ul>
+<li><p>O R não foi concebido para inserção de dados.</p></li>
+<li><p>Dados são geralmente armazenados em  ficheiros <code>.txt, .csv, .xlsx, .dat, ...</code></p></li>
+<li><p>O R tem várias funções para ler vários ficheiros.  A função mãe é <code>read.table()</code></p></li>
+</ul>
+
+<pre><code class="r">path=&quot;C:/Users/Rachid/Box Sync/My Box Docs/Analise de dados em R/Introducao&quot;
+carros=read.table(paste(path,&quot;cars.csv&quot;,sep=&#39;/&#39;), sep=&#39;,&#39;,header=TRUE)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <article data-timings="">
+    <p>O R não só pode ler dados armazenados localmente, mas também pode ler dados a partir da internet.</p>
+
+<pre><code class="r">data=read.table(&quot;http://www.sthda.com/upload/decathlon.txt&quot;, sep=&#39;\t&#39;, header=TRUE)
+head(data)
+</code></pre>
+
+<pre><code>##       name X100m Long.jump Shot.put High.jump X400m X110m.hurdle Discus
+## 1  SEBRLE  11.04      7.58    14.83      2.07 49.81        14.69  43.75
+## 2    CLAY  10.76      7.40    14.26      1.86 49.37        14.05  50.72
+## 3  KARPOV  11.02      7.30    14.77      2.04 48.37        14.09  48.95
+## 4 BERNARD  11.02      7.23    14.25      1.92 48.93        14.99  40.87
+## 5  YURKOV  11.34      7.09    15.19      2.10 50.42        15.31  46.26
+## 6 WARNERS  11.11      7.60    14.31      1.98 48.68        14.23  41.10
+##   Pole.vault Javeline X1500m Rank Points Competition
+## 1       5.02    63.19  291.7    1   8217           1
+## 2       4.92    60.15  301.5    2   8122           1
+## 3       4.92    50.31  300.2    3   8099           1
+## 4       5.32    62.77  280.1    4   8067           1
+## 5       4.72    63.44  276.4    5   8036           1
+## 6       4.92    51.77  278.1    6   8030           1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <article data-timings="">
+    <ul>
+<li><p>Usar  uma <code>url</code>  na função  <code>read.table()</code> não é aconselhável, pois não é &quot;reprodutível&quot;.</p></li>
+<li><p>O ideal é baixar os dados e lê-los localmente.</p></li>
+<li><p>A partir do R é possível baixar dados/ficheiros online usando a função <code>download.file()</code></p></li>
+</ul>
+
+<pre><code class="r"># baixar um ficheiro .txt
+download.file(&quot;http://www.sthda.com/upload/decathlon.txt&quot;,
+              destfile=paste(path, &quot;decathlon.txt&quot;,sep=&#39;/&#39;))
+</code></pre>
+
+<ul>
+<li>A função <code>download.file()</code>, não só pode ser usada para baixar ficheiros <code>.txt</code>.</li>
+</ul>
+
+<pre><code class="r">download.file(&quot;http://www2.ntia.doc.gov/files/broadband-data/AK-NBM-CSV-Dec-2012.zip&quot;, 
+              destfile=paste(path,&quot;AK-NBM-CSV-Dec-2012.zip&quot;,sep=&quot;/&quot;))
+
+unzip(&quot;AK-NBM-CSV-Dec-2012.zip&quot;)
+data &lt;- read.delim(paste(path,&quot;AK-NBM-Wireless-CSV-DEC-2012.TXT&quot;,sep=&quot;/&quot;), sep = &quot;|&quot;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Exportação de Dados</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>O R permite exportar/gravar dados em vários formatos.</p></li>
+<li><p>Um dos formatos mais populares  é o <code>.csv</code>, mas usuário está livre de exportar para o formato que lhe convem.</p></li>
+<li><p>Para exportação de dados usa-se a função <code>write.table()</code></p></li>
+</ul>
+
+<pre><code class="r">write.table(dados_trab, file=paste(path, &quot;dados_trab.csv&quot;,sep=&quot;/&quot;), sep=&quot;,&quot;,row.names=FALSE)
+</code></pre>
+
+<ul>
+<li><p>A função <code>write.table()</code> é mais genérica. Existem função mais específicas, como <code>write.csv()</code></p></li>
+<li><p><code>write.csv()</code> grava/exporta um ficheiro no formato <code>.csv</code>. </p></li>
+</ul>
+
+<pre><code class="r">write.csv(dados_trab, file=paste(path, &quot;dados_trab_1.csv&quot;,sep=&#39;/&#39;))
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>Um  pouco mais sobre Import/Export  (Dados)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>As funções <code>read.table()</code> e <code>write.table()</code> são funções internas, com algumas litimações.</p>
+
+<ul>
+<li> Há ficheiros que não é possível ler/ gravar  com estas funçoes.</li>
+<li> Por ex, ficheiros em formato <code>.xlsx</code> não podem ser lidos usando a função <code>read.table()</code></li>
+</ul>
+
+<pre><code class="r">#install.packages(&quot;openxlsx&quot;)
+library(openxlsx)
+example_xlsx=openxlsx::read.xlsx(xlsxFile = paste(path, &quot;data_example.xlsx&quot;, sep=&quot;/&quot;))
+head(example_xlsx)
+</code></pre>
+
+<pre><code>##    Season  Area Gear.Type  Time Tows Bycatch
+## 1 1989-90 North    Bottom   Day   48       0
+## 2 1989-90 North    Bottom Night    6       0
+## 3 1989-90 North Mid-Water Night    1       0
+## 4 1989-90 South    Bottom   Day  139       0
+## 5 1989-90 South Mid-Water   Day    6       0
+## 6 1989-90 South    Bottom Night    6       0
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <article data-timings="">
+    <p>A função <code>read.xlsx()</code> permite tambem especificar a planilha de dados que se pretende ler, usando o argumento <code>sheet</code>.</p>
+
+<p>O argumento <code>sheet</code> pode ser o nome da panilha em aspas, ou o nr da planilha.</p>
+
+<pre><code class="r">library(openxlsx)
+example_xlsx_1=openxlsx::read.xlsx(xlsxFile = paste(path, &quot;data_example.xlsx&quot;, sep=&quot;/&quot;),sheet=2)
+dim(example_xlsx)
+</code></pre>
+
+<pre><code>## [1] 43  6
+</code></pre>
+
+<pre><code class="r">dim(example_xlsx_1)
+</code></pre>
+
+<pre><code>## [1] 31  6
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='NA'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Principais Linguagens de programação'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='O que é preciso para ser um cientista de dados'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Instalação do Python e R'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Operações aritiméticas e declaração de variáveis'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Python-declaração de variáveis'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Manipulação de strings'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Listas'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Acesso aos itens da lista'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Adicionar elementos numa lista'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Mais operações com listas'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='NA'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Tuplas'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Por que usar  R?'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Instalação e Inicialização'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Operadores aritiméticos em R'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Tipo de Dados e Estrutura de Dados'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='vector'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='listas'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Matrizes'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Matrizes (um pouco mais)'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Data frame'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='NA'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Como aceder aos elementos da Data Frame?'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='NA'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='NA'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='NA'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='NA'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='NA'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Exportação de Dados'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Um  pouco mais sobre Import/Export  (Dados)'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='NA'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='NA'>
+         35
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
